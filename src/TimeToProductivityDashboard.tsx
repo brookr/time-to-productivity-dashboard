@@ -30,7 +30,7 @@ const generateRealisticData = () => {
   });
 };
 
-const getColorForDays = (days, target) => {
+const getColorForDays = (days: number, target: number): string => {
   const ratio = days / target;
   if (ratio <= 1.1) return 'bg-green-500';
   if (ratio <= 1.5) return 'bg-yellow-500';
